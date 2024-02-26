@@ -12,7 +12,7 @@ public class TagRunner {
     @Test
     void tagRunner(){
         Results results = Runner.path("classpath:featuresApi")
-                .tags("@feature1")
+                .tags("@createUser")
                 .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
